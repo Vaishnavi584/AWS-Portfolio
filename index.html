@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaishnavi Mishra | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
+  <!-- Floating Sidebar Icons -->
+  <div class="sidebar">
+    <a href="#about" title="About"><i class="fas fa-user"></i></a>
+    <a href="#projects" title="Projects"><i class="fas fa-rocket"></i></a>
+    <a href="#skills" title="Skills"><i class="fas fa-laptop-code"></i></a>
+    <a href="#education" title="Education"><i class="fas fa-graduation-cap"></i></a>
+    <a href="#achievements" title="Achievements"><i class="fas fa-trophy"></i></a>
+    <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+  </div>
+
   <!-- HEADER -->
   <header>
     <h1>Vaishnavi Mishra</h1>
     <p>Electronics & Computer Science | AWS Cloud Trainee | Aspiring Software & Cloud Engineer</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
   <!-- ABOUT SECTION -->
   <section id="about" class="card">
-    <h2>About Me</h2>
-    <p>
-      I am a B.Tech undergraduate in Electronics & Computer Science with strong programming and problem-solving skills. 
-      Experienced in cloud computing (AWS), AI, and software development. 
-      Enthusiastic about building efficient solutions and learning emerging technologies.
-    </p>
-    <h3>Professional Experience</h3>
-    <ul>
-      <li><strong>AWS Cloud Trainee (Jan-Apr 2025)</strong> – Completed AWS Practitioner-level training: hands-on with core services, cloud deployment, scalability, performance tuning, and cost optimization.</li>
-      <li><strong>Research Intern – Hand Gesture Recognition System (Apr 2025-Present)</strong> – Developed a real-time system using MediaPipe & OpenCV for gesture-based control, human–machine interaction, and assistive automation.</li>
-    </ul>
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>I am a B.Tech undergraduate with strong programming and problem-solving skills. Experienced in cloud computing (AWS), AI, and software development. Passionate about building efficient solutions and learning emerging technologies.</p>
   </section>
 
   <!-- PROJECTS SECTION -->
   <section id="projects" class="card">
-    <h2>Projects</h2>
+    <h2><i class="fas fa-rocket"></i> Projects</h2>
     <ul>
-      <li><strong>Personal AI Assistant (JARVIS)</strong> – Python-based AI assistant with NLP, voice commands, reminders, web search, and modular architecture.</li>
-      <li><strong>Calorie Calculator</strong> – Java project calculating BMR & daily calories with object-oriented design for maintainability.</li>
-      <li><strong>Traffic Sense AI</strong> – Smart India Hackathon project for intelligent traffic management with real-time signal adjustment.</li>
+      <li><strong>Personal AI Assistant (JARVIS)</strong> – Python AI assistant with NLP, voice commands, reminders, web search.</li>
+      <li><strong>Calorie Calculator</strong> – Java project for calculating BMR & daily calorie needs.</li>
+      <li><strong>Traffic Sense AI</strong> – Intelligent traffic management system for Smart India Hackathon.</li>
     </ul>
   </section>
 
   <!-- SKILLS SECTION -->
   <section id="skills" class="card">
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming: Java, Python</li>
-      <li>Database: MySQL</li>
-      <li>Cloud: AWS</li>
-      <li>Linux Command Line</li>
-      <li>Version Control: Git & GitHub</li>
-      <li>Soft Skills: Leadership, Hardworking, Collaborative</li>
-    </ul>
+    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+      <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+      <div class="skill-card"><i class="fas fa-database"></i> MySQL</div>
+      <div class="skill-card"><i class="fab fa-aws"></i> AWS</div>
+      <div class="skill-card"><i class="fas fa-terminal"></i> Linux CLI</div>
+      <div class="skill-card"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+    </div>
   </section>
 
   <!-- EDUCATION SECTION -->
   <section id="education" class="card">
-    <h2>Education</h2>
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
     <ul>
-      <li><strong>B.Tech – Electronics & Computer Science</strong> (2022–2026) – Shri Ramdeobaba College of Engineering and Management, Nagpur | CGPA: 9.57</li>
-      <li><strong>HSC – Tip Top Convent Higher Secondary School, Nagpur</strong> (2020–2022) | 85.83%</li>
-      <li><strong>CBSE – School of Scholars, Nagpur</strong> (2007–2020) | 92.6%</li>
+      <li><strong>B.Tech – Electronics & Computer Science (2022–2026)</strong> | CGPA: 9.57</li>
+      <li><strong>HSC – Tip Top Convent, Nagpur (2020–2022)</strong> | 85.83%</li>
+      <li><strong>CBSE – School of Scholars, Nagpur (2007–2020)</strong> | 92.6%</li>
     </ul>
-    <h3>Achievements & Certifications</h3>
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION -->
+  <section id="achievements" class="card">
+    <h2><i class="fas fa-trophy"></i> Achievements</h2>
     <ul>
       <li>Patent registered: Lunch Box Design under Designs Act, 2000</li>
-      <li>Team Captain, 1st place – Intra-College Cricket Tournament</li>
+      <li>1st Place – Intra-College Cricket Tournament (Team Captain)</li>
+      <li>Participated in Smart India Hackathon – Traffic Sense AI</li>
+      <li>Women Empowerment Cell Head – Rotaract Club RBU</li>
       <li>AWS Certified Cloud Practitioner</li>
-      <li>SQL Specialization – Coursera (University of Colorado Boulder)</li>
-      <li>English for Career Development – Coursera (University of Pennsylvania)</li>
+      <li>SQL Specialization – Coursera</li>
+      <li>English for Career Development – Coursera</li>
     </ul>
   </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="card">
-    <h2>Contact</h2>
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
     <p>Email: <a href="mailto:vaishnavimishra584@gmail.com">vaishnavimishra584@gmail.com</a></p>
     <p>Phone: +91-7770005175</p>
     <p>GitHub: <a href="https://github.com/Vaishnavi584" target="_blank">github.com/Vaishnavi584</a></p>
@@ -87,7 +88,6 @@
     <p>Location: Nagpur, India</p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Vaishnavi Mishra</p>
   </footer>
