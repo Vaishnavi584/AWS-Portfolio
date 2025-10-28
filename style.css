@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f0f4f8;
   color: #222;
   line-height: 1.6;
 }
@@ -11,7 +11,7 @@ body {
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #4b79a1;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
   color: white;
 }
 
@@ -34,9 +34,9 @@ header nav a:hover {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .card h2 {
@@ -46,7 +46,7 @@ header nav a:hover {
 
 /* Accordion */
 .accordion-btn {
-  background-color: #4b79a1;
+  background-color: #2575fc;
   color: white;
   cursor: pointer;
   padding: 1rem;
@@ -56,12 +56,12 @@ header nav a:hover {
   outline: none;
   font-size: 1.1rem;
   margin-top: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background 0.3s ease;
 }
 
 .accordion-btn:hover {
-  background-color: #3a5f7a;
+  background-color: #1054c0;
 }
 
 .accordion-content {
@@ -69,8 +69,8 @@ header nav a:hover {
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 1rem;
-  background-color: #e9ecef;
-  border-radius: 5px;
+  background-color: #e9f0ff;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
@@ -84,29 +84,29 @@ header nav a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #4b79a1;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
   color: white;
   margin-top: 2rem;
 }
 
 /* Dark Mode */
 body.dark-mode {
-  background-color: #1c1c1c;
+  background-color: #1e1e2f;
   color: #ddd;
 }
 
 body.dark-mode .card {
-  background-color: #2a2a2a;
+  background-color: #2b2b3a;
 }
 
 body.dark-mode .accordion-btn {
-  background-color: #333;
+  background-color: #4444aa;
 }
 
 body.dark-mode .accordion-btn:hover {
-  background-color: #555;
+  background-color: #333399;
 }
 
 body.dark-mode .accordion-content {
-  background-color: #444;
+  background-color: #3b3b55;
 }
