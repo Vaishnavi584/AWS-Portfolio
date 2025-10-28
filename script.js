@@ -1,4 +1,4 @@
-// Display current date in footer
+// --- Display current date in footer ---
 const footer = document.querySelector("footer");
 const currentDate = new Date();
 footer.innerHTML = `Last updated on: ${currentDate.toLocaleDateString("en-IN", {
@@ -7,15 +7,26 @@ footer.innerHTML = `Last updated on: ${currentDate.toLocaleDateString("en-IN", {
   day: "numeric",
 })}`;
 
-// Accordion functionality
-document.querySelectorAll('.accordion-btn').forEach(btn => {
+// --- Accordion functionality ---
+const accordions = document.querySelectorAll('.accordion-btn');
+
+accordions.forEach(btn => {
   btn.addEventListener('click', () => {
     const content = btn.nextElementSibling;
-    content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+
+    // Toggle open/close
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      // Close all other accordions
+      document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = null);
+
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
   });
 });
 
-// Dark/light mode toggle
+// --- Dark/Light Mode toggle ---
 const button = document.createElement("button");
 button.id = "toggle-theme";
 button.textContent = "Toggle Theme";
@@ -26,6 +37,7 @@ button.addEventListener("click", () => {
   localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
 });
 
+// Apply saved theme on load
 window.onload = () => {
   if(localStorage.getItem("theme") === "dark") document.body.classList.add("dark-mode");
 };
