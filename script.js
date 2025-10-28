@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// --- Add a Dark/Light Mode toggle button ---
+// --- Dark/Light Mode toggle ---
 const button = document.createElement("button");
 button.id = "toggle-theme";
 button.textContent = "Toggle Theme";
@@ -42,3 +42,18 @@ window.onload = () => {
     document.body.classList.add("dark-mode");
   }
 };
+
+// --- Accordion functionality for portfolio sections ---
+const accordions = document.querySelectorAll(".accordion-btn");
+accordions.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      // Hide all other sections
+      document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none");
+      content.style.display = "block";
+    }
+  });
+});
