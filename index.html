@@ -4,122 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vaishnavi Mishra | Portfolio</title>
-  
-  <!-- Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <h1>Vaishnavi Mishra</h1>
     <p>Electronics & Computer Science | Fresher | Aspiring Cloud & Software Engineer</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="card">
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <button class="accordion-btn">View About Me</button>
-    <div class="accordion-content">
-      <p>
-        I'm currently pursuing B.Tech in Electronics and Computer Science.  
-        I love exploring cloud computing, embedded systems, and verification projects such as 
-        on-chip bus converters and AXI–AHB bridges.  
-        My goal is to grow into a Cloud & DevOps Engineer while applying my hardware–software knowledge.
-      </p>
-    </div>
-  </section>
+  <main>
+    <!-- ABOUT -->
+    <section class="card">
+      <button class="accordion-btn"><i class="fa fa-user"></i> About Me</button>
+      <div class="accordion-content">
+        <p>I'm currently pursuing B.Tech in Electronics and Computer Science. I enjoy cloud computing, embedded systems, and verification projects like on-chip bus converters and AXI–AHB bridges. My goal is to become a Cloud & DevOps Engineer while applying my hardware–software knowledge.</p>
+      </div>
+    </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="card">
-    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-    <button class="accordion-btn">View Projects</button>
-    <div class="accordion-content">
-      <ul>
-        <li><strong>On-Chip Bus Converter</strong> – Verilog-based AHB–APB bridge with SystemVerilog testbench.</li>
-        <li><strong>AXI to AHB Bridge Research</strong> – Comparative analysis & simulation of AXI and AHB protocols.</li>
-        <li><strong>Hand Gesture Recognition System</strong> – Real-time gesture recognition using Python, OpenCV, and MediaPipe.</li>
-        <li><strong>Personal AI Assistant (JARVIS)</strong> – Python-based assistant with voice commands, NLP, and task automation.</li>
-        <li><strong>Calorie Calculator</strong> – Java project calculating BMR & daily calorie requirements.</li>
-      </ul>
-    </div>
-  </section>
+    <!-- PROJECTS -->
+    <section class="card">
+      <button class="accordion-btn"><i class="fa fa-briefcase"></i> Projects</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>On-Chip Bus Converter</strong> – Verilog-based AHB–APB bridge with SystemVerilog testbench.</li>
+          <li><strong>AXI to AHB Bridge Research</strong> – Comparative analysis & simulation of AXI and AHB protocols.</li>
+          <li><strong>Calorie Calculator (Python)</strong> – GUI-based daily calorie tracking and recommendation system.</li>
+          <li><strong>Hand Gesture Recognition</strong> – Real-time recognition system using OpenCV and MediaPipe.</li>
+          <li><strong>Personal AI Assistant (JARVIS)</strong> – Python-based voice command automation with NLP support.</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="card">
-    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
-    <button class="accordion-btn">View Skills</button>
-    <div class="accordion-content">
-      <p><strong>Programming:</strong> Java, Python</p>
-      <p><strong>Database:</strong> MySQL</p>
-      <p><strong>Cloud:</strong> AWS</p>
-      <p><strong>Linux:</strong> Command Line</p>
-      <p><strong>VCS:</strong> Git, GitHub</p>
-      <p><strong>Soft Skills:</strong> Leadership, Hardworking, Collaborative</p>
-    </div>
-  </section>
+    <!-- CERTIFICATIONS -->
+    <section class="card">
+      <button class="accordion-btn"><i class="fa fa-certificate"></i> Certifications</button>
+      <div class="accordion-content">
+        <ul>
+          <li>AWS Certified Cloud Practitioner – Amazon Web Services</li>
+          <li>SQL Specialization – Coursera & University of Colorado Boulder</li>
+          <li>English for Career Development – Coursera & University of Pennsylvania</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- EDUCATION SECTION -->
-  <section id="education" class="card">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <button class="accordion-btn">View Education</button>
-    <div class="accordion-content">
-      <ul>
-        <li>B.Tech in Electronics & Computer Science Engineering (2022–2026)  
-            CGPA: 9.57 – Shri Ramdeobaba College of Engineering and Management, Nagpur</li>
-        <li>Higher Secondary Certificate (HSC), Tip Top Convent, Nagpur – 85.83%</li>
-        <li>CBSE, School of Scholars, Nagpur – 92.6%</li>
-      </ul>
-    </div>
-  </section>
+    <!-- ACHIEVEMENTS -->
+    <section class="card">
+      <button class="accordion-btn"><i class="fa fa-trophy"></i> Achievements</button>
+      <div class="accordion-content">
+        <ul>
+          <li>Patent registered: Lunch Box Design under Designs Act, 2000</li>
+          <li>1st place as Team Captain – Intra-College Cricket Tournament</li>
+          <li>Participated in Smart India Hackathon – Traffic Sense AI</li>
+          <li>Women Empowerment Cell Head – Rotaract Club RBU</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- ACHIEVEMENTS SECTION -->
-  <section id="achievements" class="card">
-    <h2><i class="fas fa-trophy"></i> Achievements</h2>
-    <button class="accordion-btn">View Achievements</button>
-    <div class="accordion-content">
-      <ul>
-        <li>Patent registered: Lunch Box Design under Designs Act, 2000</li>
-        <li>1st Place as Team Captain in Intra-College Cricket Tournament</li>
-        <li>Participated in Smart India Hackathon – Traffic Sense AI project</li>
-        <li>Women Empowerment Cell Head – Rotaract Club RBU</li>
-        <li>AWS Certified Cloud Practitioner</li>
-        <li>SQL Specialization – Coursera (University of Colorado Boulder)</li>
-        <li>English for Career Development – Coursera (University of Pennsylvania)</li>
-      </ul>
-    </div>
-  </section>
+    <!-- SKILLS -->
+    <section class="card">
+      <button class="accordion-btn"><i class="fa fa-code"></i> Skills</button>
+      <div class="accordion-content">
+        <p><strong>Programming:</strong> Java, Python</p>
+        <p><strong>Database:</strong> MySQL</p>
+        <p><strong>Cloud:</strong> AWS</p>
+        <p><strong>Tools:</strong> Linux CLI, Git/GitHub</p>
+        <p><strong>Soft Skills:</strong> Leadership, Collaborative, Hardworking</p>
+      </div>
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="card">
-    <h2><i class="fas fa-envelope"></i> Contact</h2>
-    <button class="accordion-btn">View Contact Info</button>
-    <div class="accordion-content">
-      <p>Email: <a href="mailto:vaishnavimishra584@gmail.com">vaishnavimishra584@gmail.com</a></p>
-      <p>Phone: +91-7770005175</p>
-      <p>GitHub: <a href="https://github.com/Vaishnavi584" target="_blank">github.com/Vaishnavi584</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishnavi-mishra-62136625a/" target="_blank">linkedin.com/in/vaishnavi-mishra-62136625a</a></p>
-      <p>Location: Nagpur, India</p>
-    </div>
-  </section>
+    <!-- CONTACT -->
+    <section class="card">
+      <button class="accordion-btn"><i class="fa fa-envelope"></i> Contact</button>
+      <div class="accordion-content">
+        <p>Email: <a href="mailto:vaishnavimishra584@gmail.com">vaishnavimishra584@gmail.com</a></p>
+        <p>Phone: +91-7770005175</p>
+        <p>GitHub: <a href="https://github.com/Vaishnavi584" target="_blank">github.com/Vaishnavi584</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishnavi-mishra-62136625a/" target="_blank">linkedin.com/in/vaishnavi-mishra-62136625a</a></p>
+      </div>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Vaishnavi Mishra</p>
-  </footer>
+  <footer></footer>
 
-  <!-- JS LINK -->
   <script src="script.js"></script>
 </body>
 </html>
