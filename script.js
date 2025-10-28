@@ -7,6 +7,16 @@ footer.innerHTML = `Last updated on: ${currentDate.toLocaleDateString("en-IN", {
   day: "numeric",
 })}`;
 
+// --- Smooth scrolling for internal links ---
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
 // --- Accordion functionality ---
 const accordions = document.querySelectorAll('.accordion-btn');
 
@@ -25,19 +35,3 @@ accordions.forEach(btn => {
     }
   });
 });
-
-// --- Dark/Light Mode toggle ---
-const button = document.createElement("button");
-button.id = "toggle-theme";
-button.textContent = "Toggle Theme";
-document.body.appendChild(button);
-
-button.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
-});
-
-// Apply saved theme on load
-window.onload = () => {
-  if(localStorage.getItem("theme") === "dark") document.body.classList.add("dark-mode");
-};
